@@ -1,0 +1,53 @@
+body {
+   
+    background: linear-gradient(0deg, rgba(64,31,71,1) 0%, rgba(200,149,149,1) 100%);
+
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.container-fluid {
+    height: 100vh;
+    background-image: url("../img/curtains.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.table {
+    width: 700px;
+    top: 55%;
+    position: relative;
+}
+
+.outercircle {
+    top: 33%;
+    right:45%;
+    position: absolute;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+    background-color: black;
+}
+
+.innercircle {
+    display: grid;
+    top:25%;
+    right:24%;
+    position: absolute;
+    border: 5px solid rgb(187, 187, 187);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+    font-family: "Graduate", serif;
+    
+}
+h1 {
+    align-self: center;
+    margin: 0px;
+    font-size: 80px;
+}
