@@ -15,12 +15,13 @@ body {
 }
 .table {
     width: 700px;
-    top: 55%;
+    top: 90%;
     position: relative;
+    z-index: 10;
 }
 
 .outercircle {
-    top: 33%;
+    top: 37%;
     right:45%;
     position: absolute;
     border: 5px solid rgb(255, 255, 255);
@@ -51,3 +52,59 @@ h1 {
     margin: 0px;
     font-size: 80px;
 }
+.sign {
+    position: absolute;
+    background-image: url("../img/sign.webp");
+    height: 35vh;
+    width: 35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    position: absolute;
+    align-self: center;
+    margin: 10px;
+    font-size: 45px;
+}
+.col-6 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.name {
+    max-width: 35vh;
+    max-height: 35vh;
+    overflow: hidden;
+    font-family: "Rye", serif;
+}
+.shadow {
+    top: 73%;
+    position: absolute;
+    border: 5px solid rgb(37, 37, 37);
+    border-radius: 100%;
+    width: 720px;
+    height: 300px;
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 20%, rgba(22,22,22,1) 50%, rgba(29,29,29,1) 75%, rgba(37,37,37,1) 100%);
+    z-index: 0;
+}
+#circle {
+    cursor: pointer; 
+}
+#darkness {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none; 
+  z-index: 101;
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+  }
+  
