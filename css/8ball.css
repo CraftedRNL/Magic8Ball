@@ -13,10 +13,30 @@
   .container-fluid {
     height: 100vh;
     overflow: hidden;
+    background-image: url("../img/chain.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -300px;
 }
   img{
     position: relative;
-    top: -70px;
-    width: 800px;
+    top: 0px;
+    width: 1500px;
   }
+body {
+  background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.asking {
+  border: 5px solid silver;
+  font-family: "UnifrakturCook", cursive;
+  font-size: larger;
+  font-weight: 900;
+  font-style: oblique;
+  color: white;
+  background-image: url("../img/trail.gif");
+    background-size: 650px;
+    background-repeat: no-repeat;
+}
