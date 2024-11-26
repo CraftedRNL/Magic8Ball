@@ -1,0 +1,22 @@
+#darkness2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  pointer-events: none; 
+  z-index: 101;
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+  }
+  .container-fluid {
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+  img{
+    position: relative;
+    top: -70px;
+    width: 800px;
+  }
