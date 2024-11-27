@@ -7,8 +7,17 @@ setTimeout(function () {
 var rng = Math.floor((Math.random()*8));
 
 document.getElementById('button').addEventListener("click", function () {
+ 
   if(!document.getElementById('input').value == ''){
-    // document.getElementById('eye').animate('vibrate-1');
+    document.getElementById('text').innerHTML ='';
+    setTimeout(function() {
+      document.getElementById('eye').style.animation = 'vibrate-1 1.5s linear both';
+      setTimeout(function() {
+        document.getElementById('eye').style.animation = '';
+        
+      }, 1200);
+    }, 0);
+    
     setTimeout(function () {
       
       if (rng == 0) {
@@ -31,7 +40,7 @@ document.getElementById('button').addEventListener("click", function () {
       rng = Math.floor((Math.random()*8));
       var question = document.getElementById('input').value;
       console.log(question);
-  }, 900)
+  }, 1500)
  
 }
 
